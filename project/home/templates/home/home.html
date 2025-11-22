@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+{% load heroicons %}
+
+{% block title %}{{ page_title }}{% endblock title %}
+
+{% block content %}
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a class="text-2xl font-bold text-gray-800" href="#">{{ site_name }}</a>
+            <div class="space-x-4">
+                <a class="text-gray-600 hover:text-blue-500" href="#">Home</a>
+                <a class="text-gray-600 hover:text-blue-500" href="#">About</a>
+                <a class="text-gray-600 hover:text-blue-500" href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-blue-500 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-extrabold">{{ page_title }}</h1>
+            <p class="mt-4 text-lg">{{ content_title }}</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="my-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-gray-800">{{ content_title }}</h2>
+            <p class="mt-4 text-gray-600 text-lg">{{ content_message }}</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-center py-4">
+        <div class="container mx-auto">
+            <p class="text-gray-600">&copy; {{ current_year }} Your Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+{% endblock content %}

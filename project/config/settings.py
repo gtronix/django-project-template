@@ -41,11 +41,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "tailwind",
-    # "theme",
+    'tailwind',
+    'theme',
     'heroicons',
-    "crispy_forms",
-    "crispy_tailwind",
+    'crispy_forms',
+    'crispy_tailwind',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -56,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "django_browser_reload.middleware.BrowserReloadMiddleware", # Debug mode only
 ]
 
 ROOT_URLCONF = 'config.urls'
