@@ -4,3 +4,4 @@ psycopg2-binary
 django-tailwind[cookiecutter,honcho,reload]
 heroicons[django]
 crispy-tailwind
+reportlab
