@@ -4,4 +4,12 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "crispy-tailwind>=1.0.3",
+    "django>=5.2.8",
+    "django-tailwind[cookiecutter,honcho,reload]>=4.4.1",
+    "heroicons[django]>=2.13.0",
+    "psycopg2-binary>=2.9.11",
+    "python-dotenv>=1.2.1",
+    "reportlab>=4.4.5",
+]
